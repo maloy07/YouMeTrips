@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">My Website</a>
+    </div>
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> home</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> category</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> about us</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> contact us</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+  
+</div>
+
+
+
+
+
+
+
+<div class="owl-carousel owl-theme" id='main_slider'>
+    <div class="item"><h4>1</h4></div>
+    <div class="item"><h4>2</h4></div>
+    <div class="item"><h4>3</h4></div>
+    <div class="item"><h4>4</h4></div>
+    <div class="item"><h4>5</h4></div>
+    <div class="item"><h4>6</h4></div>
+    <div class="item"><h4>7</h4></div>
+    <div class="item"><h4>8</h4></div>
+    <div class="item"><h4>9</h4></div>
+    <div class="item"><h4>10</h4></div>
+    <div class="item"><h4>11</h4></div>
+    <div class="item"><h4>12</h4></div>
+</div>
+
+<form>
+ 
+ 
+  <div class="form-row">
+         <div class="form-group col-md-6">
+         <input type="text" class="form-control" id="firstName" placeholder="FIRST NAME">
+    </div>
+
+    <div class="form-row">
+         <div class="form-group col-md-6">
+         <input type="text" class="form-control" id="lastName" placeholder="LAST NAME">
+    </div>
+
+
+    <div class="form-row">
+         <div class="form-group col-md-6">
+         <input type="email" class="form-control" id="emailId" placeholder="EMAIL ID">
+    </div>
+    
+    <div class="form-row">
+         <div class="form-group col-md-6">
+         <input type="text" class="form-control" id="phoneNumber" placeholder="PHONE NUMBER">
+    </div>
+
+
+  <div class="form-group col-md-12">
+        <select id="reason for contact" class="form-control">
+        <option selected>REASON FOR CONTACT </option>
+        <option>...</option>
+        </select>
+  </div>
+  
+
+  <div class="form-group col-md-12">
+    <textarea class="form-control" id="your message" rows="3" placeholder="YOUR MESSAGE"></textarea>
+     </div>
+    
+
+    <p style="line-height: 70px;color: royalblue; text-align: center;"><button type="submit" class="btn btn-primary">SUBMIT</button></p>
+
+</form>
+
+
+<script>
+  
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        900:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+</script>
+
+</body>
+</html>
